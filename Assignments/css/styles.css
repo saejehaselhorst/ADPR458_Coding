@@ -10,6 +10,32 @@ body {
     max-width: 0 auto;
 }
 
+a.button {
+    display: block;
+    min-width: 200px;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: rgb(228, 63, 118);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+a.button:hover {
+    background-color: rgb(242, 111, 155);
+}
+
+a.button:active {
+    background-color: rgb(225, 41, 102);
+}
+
+a.button:visited {
+
+}
+
+
 header {
     text-align: left;
     background-color: rgb(228, 63, 118);
@@ -35,6 +61,10 @@ h3 {
 .circle {
     border-radius: 50%;
     border: 5px rgb(228, 63, 118);
+}
+
+aside {
+    text-align: center;
 }
 
 aside img {
