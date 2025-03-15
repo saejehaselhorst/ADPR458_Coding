@@ -1,26 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Quicksand:wght@300..700&display=swap');
-     
+ 
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
-    margin: 0 10%;
+    margin: 0;
     font-family: "Quicksand", sans-serif;    
     background-image: url(../images/bg.png);    
-}
-
-.container{
-    background-color: white; 
-}
-
-.container {
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr);
-    width: min(95%, 75em);
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.container > * {
-    grid-column: span 12;
 }
 
 a.button {
@@ -100,8 +88,22 @@ aside img {
         border: 5px;
     }
        
-/* Desktop Layout */
+/***** Mobile Layout *****/
+.container{
+    background-color: white; 
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75em);
+    padding: 0 20px;
+}
 
+.container > * {
+    grid-column: span 12;
+}
+
+/***** Desktop Layout *****/
 @media screen and (min-width: 40em) {
     .col-span-8 {
       grid-column: span 8;
