@@ -63,11 +63,16 @@ h3 {
 
 aside 
 
+.circle {
+    border-radius: 50%;
+    border: 5px rgb(228, 63, 118);
+}
+
 img {
     width: 100%;
   }
   
-  img.circle {
+img.circle {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 999px;
@@ -84,32 +89,30 @@ a:hover {
     text-decoration: underline;
 }
 
-a.button {
-    display: block;
-    min-width: 200px;
-    padding: 12px 20px;
-    text-decoration: none;
-    background-color: rgb(228, 63, 118);
+
+/****** Components ******/
+.button:link, .Button:visited {
     color: white;
+    background-color: rgb(228, 63, 118);
     text-align: center;
-    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 20px;
     border-radius: 4px;
-    transition: background-color 0.2s;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    display: inline-block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.2s ease;
+    min-width: 200px;
+    font-weight: 600;
 }
 
-a.button:hover {
+.button:hover {
     background-color: rgb(242, 111, 155);
 }
 
-a.button:active {
+.button:active {
     background-color: rgb(225, 41, 102);
 }
-
-.circle {
-    border-radius: 50%;
-    border: 5px rgb(228, 63, 118);
-}
-
 
 
 /****** Navigation ******/
