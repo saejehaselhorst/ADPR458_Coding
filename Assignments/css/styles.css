@@ -11,6 +11,79 @@ body {
     background-image: url(../images/bg.png);    
 }
 
+
+/***** Mobile Layout *****/
+.container{
+    background-color: white; 
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75em);
+    padding: 0 20px;
+}
+
+.container > * {
+    grid-column: span 12;
+}
+
+
+/***** Desktop Layout *****/
+@media screen and (min-width: 40em) {
+    .col-span-8 {
+      grid-column: span 8;
+    }
+    .col-span-4 {
+      grid-column: span 4;
+    }
+}
+
+header {
+    text-align: left;
+    background-color: rgb(228, 63, 118);
+    color: #fff;
+    padding: 2rem;
+}
+
+h1 {
+    color: rgb(126, 23, 57);
+    text-transform: uppercase;
+    font-size: clamp(32px, 4vw, 48px);
+}
+
+h2 {
+    font-size: 36px;
+    color: rgb(126, 23, 57);
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(228, 63, 118);
+}
+
+aside 
+
+img {
+    width: 100%;
+  }
+  
+  img.circle {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid rgb(228, 63, 118);
+  }
+
+a:link, a:visited {
+    color: rgb(228, 63, 118);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(242, 111, 155);
+    text-decoration: underline;
+}
+
 a.button {
     display: block;
     min-width: 200px;
@@ -32,55 +105,24 @@ a.button:active {
     background-color: rgb(225, 41, 102);
 }
 
-header {
-    text-align: left;
-    background-color: rgb(228, 63, 118);
-    color: #fff;
-    padding: 2rem;
-}
-
-h1 {
-    color: rgb(126, 23, 57);
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: rgb(126, 23, 57);
-}
-
-h3 {
-    font-size: 36px;
-    color: rgb(228, 63, 118);
-}
-
 .circle {
     border-radius: 50%;
     border: 5px rgb(228, 63, 118);
 }
 
-aside {
-    text-align: center;
-}
 
-aside img {
-    width: 180px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 999px;
-    border: 2px solid rgb(228, 63, 118)
-}
+
+/****** Navigation ******/
 
 #nav-menu li a {
     color: blue;
-}
-
-.menu-items li a {
-            color: red; 
-            font-weight: bold;
-            text-decoration: none;
-}
-        
+  }
+  
+  .menu-items li a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+  }
     p {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -88,27 +130,3 @@ aside img {
         border: 5px;
     }
        
-/***** Mobile Layout *****/
-.container{
-    background-color: white; 
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr);
-    margin: 0 auto;
-    width: min(95%, 75em);
-    padding: 0 20px;
-}
-
-.container > * {
-    grid-column: span 12;
-}
-
-/***** Desktop Layout *****/
-@media screen and (min-width: 40em) {
-    .col-span-8 {
-      grid-column: span 8;
-    }
-    .col-span-4 {
-      grid-column: span 4;
-    }
-}
