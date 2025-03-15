@@ -116,20 +116,40 @@ a.button:active {
 
 
 /****** Navigation ******/
+nav {
+    background-color: rgb(228, 63, 118);
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
 
-#nav-menu li a {
-    color: blue;
-  }
-  
-  .menu-items li a {
-    color: red;
-    font-weight: bold;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav li {
+    margin: 0 4rem;
+}
+
+nav a.link, nav a:visited {
+    color: white;
     text-decoration: none;
-  }
-    p {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding: 20px;
-        border: 5px;
-    }
+    font-size: 1.125rem;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover {
+    background-color: rgb(244, 147, 179);
+    color: white;
+    text-decoration: none;
+}
+
        
