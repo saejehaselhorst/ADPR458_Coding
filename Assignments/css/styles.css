@@ -2,12 +2,25 @@
      
 body {
     margin: 0 10%;
-    font-family: "Quicksand", sans-serif;        
+    font-family: "Quicksand", sans-serif;    
+    background-image: url(../images/bg.png);    
+}
+
+.container{
+    background-color: white;
 }
 
 .container {
-    width: 960px;
-    max-width: 0 auto;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    width: min(95%, 75em);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container > * {
+    grid-column: span 12;
 }
 
 a.button {
@@ -30,11 +43,6 @@ a.button:hover {
 a.button:active {
     background-color: rgb(225, 41, 102);
 }
-
-a.button:visited {
-
-}
-
 
 header {
     text-align: left;
@@ -92,3 +100,13 @@ aside img {
         border: 5px;
     }
        
+/* Desktop Layout */
+
+@media screen and (min-width: 40em) {
+    .col-span-8 {
+      grid-column: span 8;
+    }
+    .col-span-4 {
+      grid-column: span 4;
+    }
+}
