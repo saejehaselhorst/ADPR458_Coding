@@ -91,7 +91,7 @@ a:hover {
 
 
 /****** Components ******/
-.button:link, .Button:visited {
+a.button {
     color: white;
     background-color: rgb(228, 63, 118);
     text-align: center;
@@ -106,11 +106,11 @@ a:hover {
     font-weight: 600;
 }
 
-.button:hover {
+a.button:hover {
     background-color: rgb(242, 111, 155);
 }
 
-.button:active {
+a.button:active {
     background-color: rgb(225, 41, 102);
 }
 
