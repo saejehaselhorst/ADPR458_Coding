@@ -41,6 +41,7 @@ aside {
 }
 
 img {
+    max-width: 100%;
     width: 100%;
   }
   
@@ -50,6 +51,7 @@ img.circle {
     border-radius: 999px;
     border: 6px solid rgb(228, 63, 118);
   }
+
 
 /***** Mobile Layout *****/
 .container{
@@ -61,20 +63,25 @@ img.circle {
     width: min(95%, 75em);
     padding: 0 20px;
 }
+.card {
+  text-align: center;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+}
+
+.card-title {
+  margin: 0.75rem 0 0 0;
+  padding: 0 2rem 0.5rem;
+}
+
+.card-text {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0 2rem 0.5rem;
+}
 
 .container > * {
     grid-column: span 12;
-}
-
-
-/***** Desktop Layout *****/
-@media screen and (min-width: 40em) {
-    .col-span-8 {
-      grid-column: span 8;
-    }
-    .col-span-4 {
-      grid-column: span 4;
-    }
 }
 
 
@@ -153,3 +160,22 @@ nav a:hover {
 }
 
        
+/***** Desktop Layout *****/
+@media screen and (min-width: 40em) {
+    .col-span-8 {
+      grid-column: span 8;
+    }
+    .col-span-4 {
+      grid-column: span 4;
+    }
+}
+
+.work-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.card {
+    flex-basis: 27.5%;
+}
